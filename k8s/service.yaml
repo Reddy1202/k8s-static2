@@ -4,10 +4,10 @@ metadata:
   name: k8s-static-svc
   namespace: static
 spec:
-  selector: 
+  selector:
     app: static
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
+  - protocol: TCP
+    port: 80
+    targetPort: 80
   type: LoadBalancer
